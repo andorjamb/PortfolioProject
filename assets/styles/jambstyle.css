@@ -1,0 +1,136 @@
+/*Stylesheet for main*/
+
+/* || General Styles Site-wide*/
+
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 26;
+  font-stretch: 50%;
+}
+
+h3,
+h4 {
+  font-family: Arial Narrow, sans-serif;
+  font-weight: 400, 300;
+  font-size: 18, 14;
+  line-height: 1em;
+}
+
+ul,
+ol,
+li {
+  font-family: Arial Narrow, sans-serif;
+  font-size: large;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* || Header */
+
+.menu {
+  height: 50px;
+  margin: 0;
+  background-color: pink;
+  padding: 10px;
+  border: 1px solid orange;
+}
+.navbar {
+  /* apply to unordered list tag */
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar li a {
+  list-style: none;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  color: white;
+ }
+
+.main-banner {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  padding: 20px;
+  margin: 0;
+  background-color: pink;
+ /*border: 2px solid red;*/
+}
+.title {
+  text-align: center;
+}
+.title-div {
+  flex: 1;
+  height: 100px;
+  margin: auto;
+  text-align: center;
+  border: 1px solid green;
+}
+.page-div {
+  flex: 2;
+  height: 100px;
+  text-align: center;
+  margin: auto;
+  border: 1px solid blue;
+}
+/* || Main */
+
+.main-container {
+  display: flex;
+  background-color: rgba(53, 204, 121, 0.65);
+}
+
+.sidebar {
+  background-color: rgba(219, 208, 173, 0.65);
+  margin: 0;
+  width: 30%;
+  padding: 10px;
+  min-height: 400px;
+}
+
+.sidebar ul {
+  margin-left: 0;
+  padding: 0;
+}
+
+.sidebar li {
+  line-height: 2.5em;
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: rgb(27, 98, 230);
+}
+
+.sidebar li a:hover {
+  color: rgb(240, 238, 114);
+  text-shadow: 1px 1px rgb(206, 126, 199);
+}
+
+.sidebar li a:visited {
+  color: rgb(105, 6, 175);
+}
+
+.intro-div {
+  font-family: Noto Sans KR, sans-serif;
+  padding: 10px;
+  width: 70%;
+}
+
+/* || Footer */
+footer {
+  height: 120px;
+  background-color: rgb(197, 200, 219);
+  display: block;
+  float: bottom;
+  padding: 20px;
+  font-family: Noto Sans KR, sans-serif;
+  font-size: smaller;
+}
+
+/* || Special Div Classes */
