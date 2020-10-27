@@ -1,44 +1,102 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!--head info is really just for search optimisation-->
     <meta charset="UTF-8" />
-    <meta name="description" content="Portfolio" />
-    <meta name="keywords" content="Andor Jamb" />
+    <meta
+      name="description"
+      content="Andor Jamb's Portfolio and resource page"
+    />
+    <meta
+      name="keywords"
+      content="Andor Jamb, Web dev resources, programming, portfolio"
+    />
+    <meta name="author" content="Andor Jamb" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
-    <link rel="stylesheet" href="./assets/styles/header.css" />
-    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <link rel="stylesheet" href="./assets/styles/jambstyle.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <header>
-      <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+      <div class="menu">
+        <ul class="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <!--link to blog-->
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="add-resources.html">Additional Resources</a></li>
+        </ul>
+      </div>
 
-      <div class="banner">
-        <div class="brand-name">
-          <h1 class="brand-title">Andor Jamb</h1>
+      <div class="main-banner">
+        <div class="title-div">
+          <h1 class="title">Working title</h1>
+          <h3>Andor Jamb</h3>
         </div>
 
-        <div class="header-div">
-          <h1 title="Home Page" class="header-title">Home Page</h1>
-        </div>
-
-        <div class="picture-div">
-          <h1 class="brand-title">Something</h1>
+        <div class="page-div">
+          <h1 title="Home Page">Home Page</h1>
         </div>
       </div>
     </header>
-    <main>
-      <div class="jambstyle">
-        <p>Here's just a little div</p>
-      </div>
 
-      </main>
-    <footer></footer>
+    <main class="main-container">
+      <div class="sidebar">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+          <li>
+            <a href="https://www.w3schools.com/colors/colors_picker.asp"
+              >Basic Color Picker</a
+            >
+          </li>
+          <li>
+            <a href="https://image-color.com/color-picker.html#DA4F4F"
+              >Color picker and converter</a
+            >
+          </li>
+          <li>
+            <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+              >Flexbox on CSS Tricks</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout"
+              >Layout overview</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="intro-div">
+        <h3>Introduction</h3>
+        <p>
+          Welcome to my humble site. I am beginning to learn webdev. And stuff.
+          I am using this page to keep track of resources I use and also to
+          practice my "skills" (=lackthereof).
+        </p>
+        <h4>Other info...</h4>
+        <p>Another paragraph.</p>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <p>Andor Jamb 2020</p>
+        <p>Contact: andorjamb@protonmail.com</p>
+        <p>
+          <a href="https://github.com/andorjamb" target="_blank">
+            <img src="/assets/images/GitHub-Mark-32px.png" />
+          </a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
