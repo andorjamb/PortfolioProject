@@ -1,0 +1,152 @@
+/*Stylesheet for blog pages*/
+
+/* || General Styles Site-wide*/
+
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 26;
+  font-stretch: 50%;
+  padding: 0;
+  margin: 0;
+}
+
+h3,
+h4 {
+  font-family: Arial Narrow, sans-serif;
+  font-weight: 400, 300;
+  font-stretch: extra-expanded;
+  font-size: 18, 14;
+  line-height: normal;
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol,
+li {
+  font-family: Arial Narrow, sans-serif;
+  font-size: large;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* || Header */
+
+.menu {
+  height: 50px;
+  margin: 0;
+  background-color: pink;
+  padding: 10px;
+}
+.navbar {
+  /* apply to unordered list tag */
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar li a {
+  list-style: none;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  color: white;
+}
+
+.navbar a:active {
+  border-bottom: 2px solid orange;
+}
+
+.main-banner {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  padding: 20px;
+  margin: 0;
+  background-color: rgb(151, 18, 133);
+  /*border: 2px solid red;*/
+}
+.title {
+  text-align: center;
+}
+.title-div {
+  flex: 1;
+  height: 100px;
+  margin: auto;
+  text-align: center;
+}
+.page-div {
+  flex: 2;
+  height: 100px;
+  text-align: center;
+  margin: auto;
+}
+/* || Main */
+
+.main-container {
+  display: flex;
+  background-color: rgba(53, 204, 121, 0.65);
+}
+
+.sidebar {
+  background-color: rgba(219, 208, 173, 0.65);
+  margin: 0;
+  width: 25%;
+  padding: 20px;
+  min-height: 400px;
+  min-width: 100px;
+}
+
+.sidebar ul {
+  margin-left: 0;
+  padding: 0;
+}
+
+.sidebar li {
+  line-height: 2em;
+  font-size: 16px;
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: rgb(27, 98, 230);
+}
+
+.sidebar li a:hover {
+  color: rgb(240, 238, 114);
+  text-shadow: 1px 1px rgb(206, 126, 199);
+}
+
+.sidebar li a:visited {
+  color: rgb(105, 6, 175);
+}
+
+.blog-div {
+  /*the main div for the blog page*/
+  font-family: Noto Sans KR, sans-serif;
+  padding: 20px;
+  width: 50%;
+}
+
+.post-div {
+  /* third div in main, for links to articles*/
+  font-family: Noto Sans KR, sans-serif;
+  padding: 20px;
+  width: 25%;
+}
+
+/* || Footer */
+footer {
+  height: 120px;
+  background-color: rgb(197, 200, 219);
+  display: block;
+  float: bottom;
+  padding: 20px;
+  font-family: Noto Sans KR, sans-serif;
+  font-size: smaller;
+}
+
+/* || Special Div Classes */
