@@ -1,0 +1,130 @@
+<!DOCTYPE =html>
+<!-- if you are reading this you are working on the 'simple structure' version using jumplinks to posts-->
+<!--I have put jump links to post headings in the "post-div" and all posts for current year on same page, index.html-->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Andor Jamb's Coding Blog" />
+    <meta name="keywords" content="blog, html, javascript, webdev" />
+    <meta name="author" content="Andor Jamb" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andor Jamb: More on Structure</title>
+    <link rel="stylesheet" href="/assets/styles/jamblogstyle.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <ul class="navbar">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/add-resources.html">Additional Resources</a></li>
+        </ul>
+      </div>
+
+      <div class="main-banner">
+        <div class="title-div">
+          <h1 class="title">Working title</h1>
+          <h3>Andor Jamb</h3>
+        </div>
+
+        <div class="page-div">
+          <!--Blog title-->
+          <h1 title="Blog">Blog</h1>
+        </div>
+      </div>
+    </header>
+    <main class="main-container">
+      <div class="sidebar">
+        <!--side bar content-->
+        <h3>Side bar</h3>
+        <img src="/assets/images/sidebar-pic.jpg" />
+      </div>
+      <div class="blog-div">
+        <!--blog entry begins here-->
+
+        <article>
+          <h2 id="blog-from-scratch">Chapter 1: Making a blog from scratch</h2>
+          Initially, a helpful reference is this site:
+          <a
+            href="https://code.makery.ch/library/html-css/part5/"
+            target="_blank"
+            >code.makery</a
+          >
+          <p>
+            To summarize: you should put each blog entry in its own subfolder
+            within a 'blog' folder.
+          </p>
+        </article>
+        <article>
+          <h2 id="more-on-structure">More on structure</h2>
+        </article>
+
+        <article>
+          <h2 id="css-specificity">CSS Specificity</h2>
+          The concept of cascading: Unless you specify otherwise, an element
+          will automatically inherit the CSS styling of its parent. (This is
+          called 'inheritance'.)
+        </article>
+        <article>
+          <h2 id="js-1">Some Preliminary notes on JavaScript</h2>
+        </article>
+        <article>
+          <h2 id="git">Git Commands</h2>
+          <p>To push to a specific branch:</p>
+          <div class="codetype">git push origin name-of-branch</div>
+          <p>Making your current branch the default branch:</p>
+          <blockquote>
+            "You can set a global option for “git push” to push the code to the
+            current branch by executing the following command:
+            <div class="codetype">git config --global push.default current</div>
+            Now you can just type…
+            <div class="codetype">git push</div>
+          </blockquote>
+          <p>
+            Source:
+            https://hayato-iriumi.net/2020/10/13/git-push-to-the-current-branch/
+          </p>
+        </article>
+      </div>
+      <div class="post-div">
+        <!--This is the list of blog entries-->
+        <h3>List of Posts</h3>
+        <h2>2020</h2>
+        <ul id="post-list">
+          <li>
+            <a href="#blog-from-scratch">The blog from scratch</a>
+          </li>
+          <li>
+            <a href="#more-on-structure">More on Structure</a>
+          </li>
+          <li>
+            <a href="#css-specificity">CSS specificity</a>
+          </li>
+          <li><a href="#js-1">Preliminary JavaScript</a></li>
+          <li><a href="#git">Git commands</a></li>
+          <li>test list item</li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <div>
+        <p>Andor Jamb 2020</p>
+        <p>Contact: andorjamb@protonmail.com</p>
+        <p>
+          <a href="https://github.com/andorjamb" target="_blank">
+            <img src="/assets/images/GitHub-Mark-32px.png" />
+          </a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

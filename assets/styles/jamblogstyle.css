@@ -8,7 +8,7 @@ h2 {
   font-size: 26;
   font-stretch: 50%;
   padding: 0;
-  margin: 0;
+  margin-bottom: 20px;
 }
 
 h3,
@@ -19,7 +19,7 @@ h4 {
   font-size: 18, 14;
   line-height: normal;
   padding: 0;
-  margin: 0;
+  margin-bottom: 20px;
 }
 
 ul,
@@ -94,7 +94,7 @@ li {
 .sidebar {
   background-color: rgba(219, 208, 173, 0.65);
   margin: 0;
-  width: 25%;
+  width: 20%;
   padding: 20px;
   min-height: 400px;
   min-width: 100px;
@@ -128,34 +128,56 @@ li {
   /*the main div for the blog page*/
   font-family: Noto Sans KR, sans-serif;
   padding: 20px;
-  width: 50%;
+  width: 60%;
 }
 
 .post-div {
-  /* third div in main, for links to articles*/
+  /* third div in main, for links to blog posts, articles*/
   font-family: Noto Sans KR, sans-serif;
   padding: 20px;
-  width: 25%;
+  width: 20%;
   border-left: 5px solid magenta;
 }
 
-.post-div ul{
+.post-div ul {
   margin-left: 0;
   padding: 0;
 }
-}
 
+.post div li {
+  line-height: 2em;
+}
 .post-div a {
   /*text style for post list hyperlinks*/
   font-family: Noto Sans KR, sans-serif;
-  font-size: 12px;
+  font-size: 14px;
   text-decoration: none;
   margin: 0px;
   padding: 0px;
   list-style-type: none;
+  line-height: 2em;
+}
 
+post-div a:visited {
+  color: purple;
+}
 
+post-div a:hover {
+  color: white;
+  font-weight: bold;
+}
+post-div a:active {
+  color: orange;
+}
 
+.codetype {
+  /*this is a div class for illustrating example code in the blog posts*/
+  border: grey solid 1px;
+  box-shadow: darkgrey 1px 2px;
+  background-color: lightskyblue;
+  font-family: "Courier New", Courier, monospace;
+  margin: 5px;
+  padding: 5px 5px 5px 30px;
 }
 
 /* || Footer */
