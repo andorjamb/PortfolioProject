@@ -7,6 +7,8 @@ h2 {
   font-family: "Raleway", sans-serif;
   font-size: 26;
   font-stretch: 50%;
+  padding: 0;
+  margin: 0;
 }
 
 h3,
@@ -14,7 +16,9 @@ h4 {
   font-family: Arial Narrow, sans-serif;
   font-weight: 400, 300;
   font-size: 18, 14;
-  line-height: 1em;
+  line-height: normal;
+  padding: 0;
+  margin: 0;
 }
 
 ul,
@@ -33,7 +37,6 @@ li {
   margin: 0;
   background-color: pink;
   padding: 10px;
-  border: 1px solid orange;
 }
 .navbar {
   /* apply to unordered list tag */
@@ -50,7 +53,11 @@ li {
 
 .navbar a:hover {
   color: white;
- }
+}
+
+.navbar a:active {
+  border-bottom: 2px solid orange;
+}
 
 .main-banner {
   display: flex;
@@ -59,7 +66,7 @@ li {
   padding: 20px;
   margin: 0;
   background-color: pink;
- /*border: 2px solid red;*/
+  /*border: 2px solid red;*/
 }
 .title {
   text-align: center;
@@ -69,14 +76,12 @@ li {
   height: 100px;
   margin: auto;
   text-align: center;
-  border: 1px solid green;
 }
 .page-div {
   flex: 2;
   height: 100px;
   text-align: center;
   margin: auto;
-  border: 1px solid blue;
 }
 /* || Main */
 
@@ -89,8 +94,9 @@ li {
   background-color: rgba(219, 208, 173, 0.65);
   margin: 0;
   width: 30%;
-  padding: 10px;
+  padding: 20px;
   min-height: 400px;
+  min-width: 100px;
 }
 
 .sidebar ul {
@@ -99,7 +105,8 @@ li {
 }
 
 .sidebar li {
-  line-height: 2.5em;
+  line-height: 2em;
+  font-size: 16px;
 }
 
 .sidebar li a {
@@ -117,6 +124,21 @@ li {
 }
 
 .intro-div {
+  /*the main div for the home page*/
+  font-family: Noto Sans KR, sans-serif;
+  padding: 20px;
+  width: 70%;
+}
+
+.projects-div {
+  /*the main div for the projects page*/
+  font-family: Noto Sans KR, sans-serif;
+  padding: 10px;
+  padding-left: 20px;
+  width: 70%;
+}
+.add-resources-div {
+  /*the main div for the add-resources page*/
   font-family: Noto Sans KR, sans-serif;
   padding: 10px;
   width: 70%;

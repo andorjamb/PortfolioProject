@@ -66,7 +66,7 @@ li {
   height: 100px;
   padding: 20px;
   margin: 0;
-  background-color: rgb(151, 18, 133);
+  background-color: rgba(219, 79, 163, 0.75);
   /*border: 2px solid red;*/
 }
 .title {
@@ -136,6 +136,26 @@ li {
   font-family: Noto Sans KR, sans-serif;
   padding: 20px;
   width: 25%;
+  border-left: 5px solid magenta;
+}
+
+.post-div ul{
+  margin-left: 0;
+  padding: 0;
+}
+}
+
+.post-div a {
+  /*text style for post list hyperlinks*/
+  font-family: Noto Sans KR, sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+
+
+
 }
 
 /* || Footer */
