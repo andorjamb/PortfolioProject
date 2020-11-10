@@ -65,8 +65,7 @@ li {
   height: 100px;
   padding: 20px;
   margin: 0;
-  background-color: pink;
-  /*border: 2px solid red;*/
+  background-color: pink; /*hex conversion #FFC0CB*/
 }
 .title {
   text-align: center;
@@ -93,7 +92,7 @@ li {
 .sidebar {
   background-color: rgba(219, 208, 173, 0.65);
   margin: 0;
-  width: 30%;
+  width: 20%;
   padding: 20px;
   min-height: 400px;
   min-width: 100px;
@@ -127,7 +126,7 @@ li {
   /*the main div for the home page*/
   font-family: Noto Sans KR, sans-serif;
   padding: 20px;
-  width: 70%;
+  width: 80%;
 }
 
 .projects-div {
@@ -135,13 +134,13 @@ li {
   font-family: Noto Sans KR, sans-serif;
   padding: 10px;
   padding-left: 20px;
-  width: 70%;
+  width: 80%;
 }
 .add-resources-div {
   /*the main div for the add-resources page*/
   font-family: Noto Sans KR, sans-serif;
   padding: 10px;
-  width: 70%;
+  width: 80%;
 }
 
 /* || Footer */

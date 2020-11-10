@@ -32,7 +32,7 @@
 
       <div class="main-banner">
         <div class="title-div">
-          <h1 class="title">Working title</h1>
+          <h1 class="title">Working Space</h1>
           <h3>Andor Jamb</h3>
         </div>
 
@@ -46,14 +46,14 @@
       <div class="sidebar">
         <!--side bar content-->
         <h3>Side bar</h3>
-        <img src="/assets/images/sidebar-pic.jpg" />
+        <img src="/assets/images/sidebar-pic.jpg" alt="drinks" />
       </div>
       <div class="blog-div">
         <!--blog entry begins here-->
 
         <article>
           <h2 id="blog-from-scratch">Chapter 1: Making a blog from scratch</h2>
-          Initially, a helpful reference is this site:
+          Initially, a helpful reference may be this site:
           <a
             href="https://code.makery.ch/library/html-css/part5/"
             target="_blank"
@@ -61,18 +61,31 @@
           >
           <p>
             To summarize: you should put each blog entry in its own subfolder
-            within a 'blog' folder.
+            within a 'blog' folder. Not doing that here though.
           </p>
         </article>
         <article>
           <h2 id="more-on-structure">More on structure</h2>
+          <p>
+            This page looks useful?
+            <a
+              href="https://www.webstyleguide.com/wsg3/5-site-structure/3-site-file-structure.html"
+              target="_blank"
+              >site structure tips</a
+            >
+            from the web style guide.
+          </p>
         </article>
 
         <article>
           <h2 id="css-specificity">CSS Specificity</h2>
-          The concept of cascading: Unless you specify otherwise, an element
-          will automatically inherit the CSS styling of its parent. (This is
-          called 'inheritance'.)
+          <p>
+            The concept of cascading: Unless you specify otherwise, an element
+            will automatically inherit the CSS styling of its parent. (This is
+            called 'inheritance'.) Am totally confused by the complexity of
+            specificity, and it does my head in trying to spell it.
+          </p>
+          <p>There is a specific order to specificity.</p>
         </article>
         <article>
           <h2 id="js-1">Some Preliminary notes on JavaScript</h2>
@@ -94,9 +107,40 @@
             https://hayato-iriumi.net/2020/10/13/git-push-to-the-current-branch/
           </p>
         </article>
+        <article>
+          <h2 id="responsive-design">Responsive Design</h2>
+          <p>Read these articles:</p>
+          <ul>
+            <li>
+              <a
+                href="https://www.browserstack.com/guide/ideal-screen-sizes-for-responsive-design"
+                >Screen sizes and responsivity test</a
+              >
+              (also has a good explanation of breakpoints)
+            </li>
+            <li>
+              <a
+                href="https://mediag.com/blog/popular-screen-resolutions-designing-for-all/"
+                >list of device screen sizes</a
+              >
+              and tips on how to use breakpoints
+            </li>
+            <li>
+              <a
+                href="https://thewhitelabelagency.com/recommended-screen-resolution-for-web-design/"
+                >even better breakpoint explanation</a
+              >
+            </li>
+          </ul>
+          <p>
+            "Friction" in web design terms basically just means unnecessary
+            clutter or steps to complete an action on a website, or slow-loading
+            elements that make the experience frustrating.
+          </p>
+        </article>
       </div>
       <div class="post-div">
-        <!--This is the list of blog entries-->
+        <!--This is the list of blog entries with jump links to headings-->
         <h3>List of Posts</h3>
         <h2>2020</h2>
         <ul id="post-list">
@@ -111,6 +155,7 @@
           </li>
           <li><a href="#js-1">Preliminary JavaScript</a></li>
           <li><a href="#git">Git commands</a></li>
+          <li><a href="#responsive-design">Responsive Design</a></li>
           <li>test list item</li>
         </ul>
       </div>
