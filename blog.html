@@ -53,15 +53,17 @@
 
         <article>
           <h2 id="blog-from-scratch">Chapter 1: Making a blog from scratch</h2>
-          Initially, a helpful reference may be this site:
+          First try the basic advice on this site:
           <a
             href="https://code.makery.ch/library/html-css/part5/"
             target="_blank"
             >code.makery</a
           >
           <p>
-            To summarize: you should put each blog entry in its own subfolder
-            within a 'blog' folder. Not doing that here though.
+            I think that if you are not using JavaScript, you can't actually
+            load pages into a div...instead your blog will just be a single-page
+            application, and you have to make internal links to the post
+            headings (by using jump links). Boring.
           </p>
         </article>
         <article>
@@ -85,11 +87,16 @@
             called 'inheritance'.) Am totally confused by the complexity of
             specificity, and it does my head in trying to spell it.
           </p>
-          <p>There is a specific order to specificity.</p>
+          <p>
+            There is a specific order to specificity....yes...I will write it
+            down when I remember it...
+          </p>
         </article>
         <article>
           <h2 id="js-1">Some Preliminary notes on JavaScript</h2>
         </article>
+        Hmmm
+        <p><a href="https://stackoverflow.com/questions/33021659/sidebar-navigation-and-display-content-on-right-side" target="_blank"></a>This is maybe useful?</p>
         <article>
           <h2 id="git">Git Commands</h2>
           <p>To push to a specific branch:</p>
@@ -106,6 +113,22 @@
             Source:
             https://hayato-iriumi.net/2020/10/13/git-push-to-the-current-branch/
           </p>
+          <h3>Merging changes you've made on a branch into the master</h3>
+          <p>
+            First you need to change back to the master, by checking it out:
+          </p>
+          <div class="codetype">git checkout master</div>
+          <p>
+            Now you have a local copy of the master. You are going to add the
+            changes to the local master first, with the command:
+          </p>
+          <div class="codetype">
+            git pull origin master<br />git merge branch-name
+          </div>
+          <p>
+            then you push the updated and merged master back to the remote repo:
+          </p>
+          <div class="codetype">git push origin master</div>
         </article>
         <article>
           <h2 id="responsive-design">Responsive Design</h2>
@@ -162,7 +185,7 @@
     </main>
     <footer>
       <div>
-        <p>Andor Jamb 2020</p>
+        <p>Andor Jamb aka Anna Petelin 2020</p>
         <p>Contact: andorjamb@protonmail.com</p>
         <p>
           <a href="https://github.com/andorjamb" target="_blank">
