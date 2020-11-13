@@ -145,6 +145,12 @@
             then you push the updated and merged master back to the remote repo:
           </p>
           <div class="codetype">git push origin master</div>
+
+<h3>Changing or updating a remote repository location</h3>
+<p>If you change the name of your repository on GitHub, git will still redirect your commits 
+  to the new location, but you should update it anyway, in case someone else starts using the 
+  old repository name (then the redirect will no longer happen)</p>
+          <div class="codetype">git remote set-url origin git@github.com:[username/repo-name.git]</div>
         </article>
         <article>
           <h2 id="responsive-design">Responsive Design</h2>
@@ -204,8 +210,8 @@
         <p>Andor Jamb aka Anna Petelin 2020</p>
         <p>Contact: andorjamb@protonmail.com</p>
         <p>
-          <a href="https://github.com/andorjamb" target="_blank">
-            <img src="/assets/images/GitHub-Mark-32px.png">
+          <a href="https://github.com/andorjamb" target="_blank" >
+            <img src="assets/images/GitHub-Mark-32px.png" alt="octocat"> 
           </a>
         </p>
       </div>
