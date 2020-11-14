@@ -46,7 +46,7 @@
       <div class="sidebar">
         <!--side bar content-->
         <h3>Side bar</h3>
-        <img src="/assets/images/sidebar-pic.jpg" alt="drinks" />
+        <img src="assets/images/sidebar-pic.jpg" alt="drinks" />
       </div>
       <div class="blog-div">
         <!--blog entry begins here-->
@@ -63,7 +63,7 @@
             I think that if you are not using JavaScript, you can't actually
             load pages into a div...instead your blog will just be a single-page
             application, and you have to make internal links to the post
-            headings (by using jump links). Boring.
+            headings (by using jump links).
           </p>
         </article>
         <article>
@@ -79,21 +79,20 @@
           </p>
         </article>
 
-        <article>
+        <!--<article>
           <h2 id="css-specificity">CSS Specificity</h2>
           <p>
             The concept of cascading: Unless you specify otherwise, an element
             will automatically inherit the CSS styling of its parent. (This is
-            called 'inheritance'.) Am totally confused by the complexity of
-            specificity, and it does my head in trying to spell it.
-          </p>
-          <p>
-            There is a specific order to specificity....yes...I will write it
-            down when I remember it...
-          </p>
+            called 'inheritance'.) 
+          </p>-->
+          
         </article>
         <article>
           <h2 id="js-1">Some Preliminary notes on JavaScript</h2>
+
+          <p>About jquery:</p>
+          <a href="https://api.jquery.com/load/" target="_blank">link</a>
         </article>
 
         <p>
@@ -150,7 +149,10 @@
 <p>If you change the name of your repository on GitHub, git will still redirect your commits 
   to the new location, but you should update it anyway, in case someone else starts using the 
   old repository name (then the redirect will no longer happen)</p>
+  <p>For addresses using an SSH key:</p>
           <div class="codetype">git remote set-url origin git@github.com:[username/repo-name.git]</div>
+          <p>For HTTPS:// addresses:</p>
+          <div class="codetype">git remote set-url origin https://github.com/[username/repo-name.git]</div>
         </article>
         <article>
           <h2 id="responsive-design">Responsive Design</h2>
@@ -195,9 +197,9 @@
           <li>
             <a href="#more-on-structure">More on Structure</a>
           </li>
-          <li>
+          <!--<li>
             <a href="#css-specificity">CSS specificity</a>
-          </li>
+          </li>-->
           <li><a href="#js-1">Preliminary JavaScript</a></li>
           <li><a href="#git">Git commands</a></li>
           <li><a href="#responsive-design">Responsive Design</a></li>
