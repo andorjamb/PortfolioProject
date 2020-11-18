@@ -154,4 +154,38 @@ footer {
   font-size: smaller;
 }
 
-/* || Special Div Classes */
+/* || breakpoints for device types*/
+/*@media screen and (max-width: 600px) {
+  h1,
+  h2 {
+    font-size: smaller;
+  }
+  .menu {
+    height: 150px;
+  }
+  .navbar {
+    display: inline-flexbox;
+    float: right;
+    flex-direction: column;
+  }
+  .main-banner {
+    display: inline-flexbox;
+    float: left;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+  }
+
+  .main-container {
+    display: flexbox;
+  }
+
+  .sidebar {
+    display: inline;
+  }
+
+  .intro-div {
+    display: inline;
+  }
+}
+*/

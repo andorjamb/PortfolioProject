@@ -136,6 +136,12 @@ li {
   width: 60%;
 }
 
+.blog-div h3 {
+  font-size: 20;
+  font-family: font-family: "Raleway", sans-serif;
+  font-stretch: 200%;
+}
+
 .post-div {
   /* third div in main, for links to blog posts, articles*/
   font-family: Noto Sans KR, sans-serif;
@@ -194,6 +200,17 @@ footer {
   padding: 20px;
   font-family: Noto Sans KR, sans-serif;
   font-size: smaller;
+}
+
+#return-to-top {
+  height: 30px;
+  width: 150px;
+  padding: 10px;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  text-decoration: none;
 }
 
 /* || Special Div Classes */
