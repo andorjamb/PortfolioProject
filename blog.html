@@ -1,4 +1,4 @@
-<!DOCTYPE =html>
+<!DOCTYPE html>
 <!-- if you are reading this you are working on the 'simple structure' version using jumplinks to posts-->
 <!--I have put jump links to post headings in the "post-div" and all posts for current year on same page, index.html-->
 <html>
@@ -42,7 +42,6 @@
       <div class="main-banner">
         <div class="title-div">
           <h1 class="title">Working Space</h1>
-          <h3>Andor Jamb</h3>
         </div>
 
         <div class="page-div">
@@ -89,13 +88,65 @@
           </p>
         </article>
 
-        <!--<article>
+        <article>
           <h2 id="css-specificity">CSS Specificity</h2>
-          <p>
-            The concept of cascading: Unless you specify otherwise, an element
-            will automatically inherit the CSS styling of its parent. (This is
-            called 'inheritance'.) 
-          </p>-->
+          <p>For any page element there are almost always conflicting styles affecting how it should be displayed 
+            in the browser.  The specificity rules exist to clarify to the browser which one should be dominant
+            in each case.</p>
+            <p>Firstly, the very concept of cascading means that unless you specify otherwise, an element
+              will automatically inherit the CSS styling of its parent. (This is
+              called 'inheritance'.) </p>
+              <p>Also that, given styles that would otherwise be equal in specificity, more recent styles will take precedence. 
+                'Most recent' means 'closest to the bottom of the sheet', or 
+                'closest to where the element itself appears in the html'.</p>
+          <p>The situation can quickly become very complicated with the addition of classes, ids, and inline styles.
+            An algorithm involving four style selector categories is used to work out which style should apply.
+          </p>
+        
+          <h4>Selector specificity</h4>
+          <p>Basically anything that identifies an element is a selector, 
+            eg:
+            <ul><li>Types like Div, id, class, a</li>
+            <li>pseudo-classes like :hover</li>
+          <li>pseudo-classes like :first-child, first-of-type</li></ul>
+          </p>
+        
+        
+          <p>Selector specificity = 0, 0, 0, 0</p>
+         <p>Consider it is a number without the commas: eg 0000 < 0100  < 1010
+          The higher the value of this number is, the more specific it is.
+          </p>
+
+
+
+<h4>Child versus Descendant</h4>
+<p></p>
+
+            <p>Note: For the sake of decreasing the browser's workload, it's better to use shorter selectors
+              wherever possible. This means reducing the amount of child and descendant selectors.
+            </p>
+
+          <p>Inline &ltstyle&gt tags will override stylesheet styles for an element. 
+            !important after a property value can be used to over-ride any specificity rule 
+            or inline style. Eg <span style="color:green">color: green !important;</span>
+            But in general it should be avoided.</p>
+            <p> </p>
+            
+          
+
+
+              
+           
+          Specificity values: a three digit string, eg (2-4-1)
+          where the first digit: means the number of ID selectors
+          second digit: number of class selectors
+          third digit: numbre and type selectors and pseudo-elements. 
+                        
+           The browser compares thes values to determine which style wins.
+                        
+           Eg .red.blue.yellow //  0-3-0
+                        
+        div.yellow#red // 1-1-1</p>
           
         </article>
         <article>
@@ -168,6 +219,8 @@
           <h2 id="responsive-design">Responsive Design</h2>
           <p>Read these articles:</p>
           <ul>
+            <li><a href="https://www.thesitewizard.com/css/mobile-friendly-responsive-design.shtml">Site Wizard</a> - very useful section on including 
+               media query in stylesheet links in head. </li>
             <li>
               <a
                 href="https://www.browserstack.com/guide/ideal-screen-sizes-for-responsive-design"
@@ -189,13 +242,54 @@
               >
             </li>
           </ul>
+          <p>Putting the following tag in the doc's head over-rides the mobile browser's trick of 
+            "pretending" to have a bigger screen than it actually does, and prevents it squashing all the 
+            content to fit:
+          </p>
+          <div class="codetype">
+          &ltmeta name="viewport" content="width=device-width, initial-scale=1"&gt
+          </div>
+
+
           <p>
-            "Friction" in web design terms basically just means unnecessary
+            Note: "Friction" in web design terms basically just means unnecessary
             clutter or steps to complete an action on a website, or slow-loading
             elements that make the experience frustrating.
           </p>
         </article>
-      </div>
+        <article>
+          <h2 id="page-layout">Page Layout with HTML and CSS</h2>
+
+  <p></p><blockquote><i>"An important concept to understand first is that every single element on a web page 
+    is a block. Literally a rectangle of pixels."</i></blockquote> <br>
+            <a >(CSS Tricks)</a>
+
+           <p>A bit of layout history: page layouts were initially constructed using the html &lttable&gt tags
+            to distribute content in rows and colomns. Then CSS enabled the positioning and float properties.  
+            More recently, Flex Box and Flex properties allow docs to flow and scale much more flexibly. 
+            Grid layout is the most recent development (and not yet fully supported). </p>
+
+            <p></p>Using the Position property:
+            The default value is "static", in which case the element takes its positioning cue from wherever
+          it appears in the HTML.</p> 
+         <p><span class="emphatic">"Absolute" positioning</span>  instead fixes an element outside the normal HTML flow. It is usually combined 
+           with properties that specify its exact position on the page, namely:<br>
+           Top <br>
+           Right<br>
+           Bottom<br>
+           Left<br>
+(You only specify one property for vertical and one for horizontal, if needed at all).
+The abolute-positioned element will be placed relative to the &ltbody&gt element, or to the "closest"
+non-statically-positioned element. 
+<p><span class="emphatic">Relative positioning</span> is actually basically the same as absolute positioning, except 
+that it takes as its reference where it <i>would</i> have been positioned if in normal flow.</p>
+
+
+
+
+         </p>
+
+        </article>      </div>
       <div class="post-div">
         <!--This is the list of blog entries with jump links to headings-->
         <h3>List of Posts</h3>
@@ -207,12 +301,13 @@
           <li>
             <a href="#more-on-file-structure">More on File Structure</a>
           </li>
-          <!--<li>
+          <li>
             <a href="#css-specificity">CSS specificity</a>
-          </li>-->
+          </li>
           <li><a href="#js-1">Preliminary JavaScript</a></li>
           <li><a href="#git">Git commands</a></li>
           <li><a href="#responsive-design">Responsive Design</a></li>
+          <li><a href="#page-layout">Page layout</a></li>
           <!--<li>test list item</li>-->
         </ul>
       </div>

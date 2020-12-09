@@ -137,9 +137,15 @@ li {
 }
 
 .blog-div h3 {
-  font-size: 20;
-  font-family: font-family: "Raleway", sans-serif;
-  font-stretch: 200%;
+  font-size: 16;
+  font-family: Noto Sans KR, sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.blog-div span.emphatic {
+  color: green;
+  size: 30px;
+
 }
 
 .post-div {
@@ -193,7 +199,7 @@ post-div a:active {
 
 /* || Footer */
 footer {
-  height: 120px;
+  height: 150px;
   background-color: rgb(197, 200, 219);
   display: block;
   float: bottom;
@@ -202,6 +208,22 @@ footer {
   font-size: smaller;
 }
 
+footer a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+footer a:active {
+  color: orange;
+}
+
+footer a:hover {
+  color: pink;
+  text-shadow: 1px 2px darkslateblue;
+}
+
+/*  attemp to create nested div for return-to-top link
 #return-to-top {
   height: 30px;
   width: 150px;
@@ -211,6 +233,4 @@ footer {
   justify-content: space-around;
   text-align: center;
   text-decoration: none;
-}
-
-/* || Special Div Classes */
+}*/
