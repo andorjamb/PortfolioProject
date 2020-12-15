@@ -102,7 +102,7 @@ li {
 .sidebar img {
   width: 100%;
   height: auto;
-  border: 2px solid grey;
+  
 }
 
 .sidebar ul {
@@ -137,15 +137,20 @@ li {
 }
 
 .blog-div h3 {
-  font-size: 16;
+  font-size: 22;
   font-family: Noto Sans KR, sans-serif;
   letter-spacing: 1.5px;
+}
+
+.blog-div h4 {
+  font-size: 20;
+  text-decoration: underline;
 }
 
 .blog-div span.emphatic {
   color: green;
   size: 30px;
-
+  font-weight: 600;
 }
 
 .post-div {

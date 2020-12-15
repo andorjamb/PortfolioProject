@@ -61,12 +61,8 @@
 
         <article>
           <h2 id="blog-from-scratch">Chapter 1: Making a blog from scratch</h2>
-          First try the basic advice on this site:
-          <a
-            href="https://code.makery.ch/library/html-css/part5/"
-            target="_self"
-            >code.makery</a
-          >
+          There is basic advice on this site:
+          <a href="https://code.makery.ch/library/html-css/part5/">code.makery</a>
           <p>
             I think that if you are not using JavaScript, you can't actually
             load pages into a div...instead your blog will just be a single-page
@@ -80,11 +76,7 @@
             This page looks useful?
             <a
               href="https://www.webstyleguide.com/wsg3/5-site-structure/3-site-file-structure.html"
-              target="_self
-"
-              >site structure tips</a
-            >
-            from the web style guide.
+              target="_self">site structure tips</a> from the web style guide.
           </p>
         </article>
 
@@ -102,6 +94,11 @@
           <p>The situation can quickly become very complicated with the addition of classes, ids, and inline styles.
             An algorithm involving four style selector categories is used to work out which style should apply.
           </p>
+          <h3>A few general notes on the hierarchy:</h3>
+          <p>Inline &ltstyle&gt tags will override stylesheet styles for an element. 
+            !important after a property value can be used to over-ride any specificity rule 
+            or inline style. Eg <span style="color:green">color: green !important;</span>
+            But in general it should be avoided.</p>
         
           <h4>Selector specificity</h4>
           <p>Basically anything that identifies an element is a selector, 
@@ -111,33 +108,22 @@
           <li>pseudo-classes like :first-child, first-of-type</li></ul>
           </p>
         
-        
+        <h3>How it works:</h3>
           <p>Selector specificity = 0, 0, 0, 0</p>
          <p>Consider it is a number without the commas: eg 0000 < 0100  < 1010
           The higher the value of this number is, the more specific it is.
           </p>
 
-
-
 <h4>Child versus Descendant</h4>
 <p></p>
-
+<h4>Aside Note on CSS Efficiency</h4>
             <p>Note: For the sake of decreasing the browser's workload, it's better to use shorter selectors
               wherever possible. This means reducing the amount of child and descendant selectors.
             </p>
 
-          <p>Inline &ltstyle&gt tags will override stylesheet styles for an element. 
-            !important after a property value can be used to over-ride any specificity rule 
-            or inline style. Eg <span style="color:green">color: green !important;</span>
-            But in general it should be avoided.</p>
-            <p> </p>
-            
           
-
-
-              
-           
-          Specificity values: a three digit string, eg (2-4-1)
+                        
+         <!--Specificity values: a three digit string, eg (2-4-1)
           where the first digit: means the number of ID selectors
           second digit: number of class selectors
           third digit: numbre and type selectors and pseudo-elements. 
@@ -146,7 +132,7 @@
                         
            Eg .red.blue.yellow //  0-3-0
                         
-        div.yellow#red // 1-1-1</p>
+        div.yellow#red // 1-1-1--> 
           
         </article>
         <article>
@@ -267,9 +253,16 @@
             More recently, Flex Box and Flex properties allow docs to flow and scale much more flexibly. 
             Grid layout is the most recent development (and not yet fully supported). </p>
 
-            <p></p>Using the Position property:
-            The default value is "static", in which case the element takes its positioning cue from wherever
-          it appears in the HTML.</p> 
+            <h3>Using the Position property:</h3>
+            <p>"Static" is the default, and jesu means for an element to sit wherever it would usually sit in the HTML.</p> 
+            <p>"Relative" position of an element means <i>relative to its static position</i,> and defining the position this 
+              way allows you to move the element, eg, 10px left or right from where it would otherwise sit. </p>
+            <p>"Absolute" positioning is designated in pixels relative to either the nearest absolute-postioned parent element, of the HTML 
+              page itself (the root block, or "initial containing element"), if no such element is found. 
+            </p>
+            <p>See here for more detail: <a href="https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/">
+            CSS-Tricks on positioning</a></p>
+
          <p><span class="emphatic">"Absolute" positioning</span>  instead fixes an element outside the normal HTML flow. It is usually combined 
            with properties that specify its exact position on the page, namely:<br>
            Top <br>
@@ -281,13 +274,7 @@ The abolute-positioned element will be placed relative to the &ltbody&gt element
 non-statically-positioned element. 
 <p><span class="emphatic">Relative positioning</span> is actually basically the same as absolute positioning, except 
 that it takes as its reference where it <i>would</i> have been positioned if in normal flow.</p>
-
-
-
-
-         </p>
-
-        </article>      </div>
+ </article>      </div>
       <div class="post-div">
         <!--This is the list of blog entries with jump links to headings-->
         <h3>List of Posts</h3>
