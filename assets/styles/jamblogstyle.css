@@ -1,6 +1,13 @@
-/*Stylesheet for blog pages*/
+/*On branch "grid-style"*/
+/*add js- class names to classes to signal which elements have js relationships*/
 
 /* || General Styles Site-wide*/
+
+/*Grid layout using BEM
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}*/
 
 h1,
 h2 {
@@ -96,7 +103,7 @@ li {
   width: 20%;
   padding: 20px;
   min-height: 400px;
-  min-width: 100px;
+  min-width: 60px;
 }
 
 .sidebar img {
@@ -143,14 +150,15 @@ li {
 }
 
 .blog-div h4 {
-  font-size: 20;
+  font-size: 20px;
   text-decoration: underline;
 }
 
 .blog-div span.emphatic {
   color: green;
+  font-weight: 700;
   size: 30px;
-  font-weight: 600;
+  
 }
 
 .post-div {
@@ -159,8 +167,8 @@ li {
   padding: 20px;
   width: 20%;
   border-left: 5px solid magenta;
+  min-width: 100px;
 }
-
 .post-div ul {
   margin-left: 0;
   padding: 0;

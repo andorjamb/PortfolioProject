@@ -1,6 +1,4 @@
-/*Stylesheet for main*/
-
-/* || General Styles Site-wide*/
+/* || General Styles Site-wide except for blog page (and project page)*/
 
 h1,
 h2 {
@@ -11,11 +9,10 @@ h2 {
   margin: 0;
 }
 
-h3,
-h4 {
+h3 {
   font-family: Arial Narrow, sans-serif;
-  font-weight: 400, 300;
-  font-size: 18, 14;
+  font-weight: 700;
+  font-size: 18;
   line-height: normal;
   padding: 0;
   margin: 0;
@@ -32,19 +29,61 @@ li {
 
 /* || Header */
 
+@media screen and (max-width: 600px) {
+  h1,
+  h2 {
+    font-size: 20px;
+  }
+  .banner {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+header {
+  background-color: pink; /*hex conversion #FFC0CB*/
+}
+
+/*header div classes*/
+.banner {
+  display: flex;
+  justify-content: space-between;
+}
+
 .menu {
   height: 50px;
   margin: 0;
-  background-color: pink;
   padding: 10px;
 }
+
+.title-div {
+  /*site name div*/
+  box-sizing: border-box;
+  height: 80px;
+  margin-left: 20px;
+  text-align: center;
+  line-height: 60px;
+}
+.page-div {
+  /*div in header for page name*/
+  box-sizing: border-box;
+  height: 100px;
+  margin-right: 50px;
+  line-height: 80px;
+  text-align: center;
+}
+
+.title-div > h3 {
+  line-height: 20px;
+}
+
+/*ul and associated links class in header navbar*/
 .navbar {
-  /* apply to unordered list tag */
   display: flex;
   justify-content: space-around;
 }
 
-.navbar li a {
+.navbar a {
   list-style: none;
   color: black;
   text-decoration: none;
@@ -59,31 +98,12 @@ li {
   border-bottom: 2px solid orange;
 }
 
-.main-banner {
-  display: flex;
-  justify-content: space-between;
-  height: 100px;
-  padding: 20px;
-  margin: 0;
-  background-color: pink; /*hex conversion #FFC0CB*/
-}
 .title {
   text-align: center;
 }
-.title-div {
-  flex: 1;
-  height: 100px;
-  margin: auto;
-  text-align: center;
-}
-.page-div {
-  flex: 2;
-  height: 100px;
-  text-align: center;
-  margin: auto;
-}
-/* || Main */
 
+/* || Main */
+/*div classes*/
 .main-container {
   display: flex;
   background-color: rgba(53, 204, 121, 0.65);
@@ -92,11 +112,41 @@ li {
 .sidebar {
   background-color: rgba(219, 208, 173, 0.65);
   margin: 0;
-  width: 20%;
+  flex: 20%;
   padding: 20px;
   min-height: 400px;
-  min-width: 100px;
+  min-width: 60px;
 }
+
+.right-div {
+  /*a placeholder div for the right side of main content*/
+  flex: 20%;
+  padding: 20px;
+  background-color: rgba(219, 208, 173, 0.65);
+}
+
+.intro-div {
+  /*the main div for the home page*/
+  font-family: Noto Sans KR, sans-serif;
+  padding: 20px;
+  width: 80%;
+}
+
+.projects-div {
+  /*the main div for the projects page*/
+  font-family: Noto Sans KR, sans-serif;
+  padding: 10px;
+  padding-left: 20px;
+  width: 80%;
+}
+.add-resources-div {
+  /*the main div for the add-resources page*/
+  font-family: Noto Sans KR, sans-serif;
+  padding: 10px;
+  width: 80%;
+}
+
+/*list and link styles*/
 
 .sidebar ul {
   margin-left: 0;
@@ -122,26 +172,6 @@ li {
   color: rgb(105, 6, 175);
 }
 
-.intro-div {
-  /*the main div for the home page*/
-  font-family: Noto Sans KR, sans-serif;
-  padding: 20px;
-  width: 80%;
-}
-
-.projects-div {
-  /*the main div for the projects page*/
-  font-family: Noto Sans KR, sans-serif;
-  padding: 10px;
-  padding-left: 20px;
-  width: 80%;
-}
-.add-resources-div {
-  /*the main div for the add-resources page*/
-  font-family: Noto Sans KR, sans-serif;
-  padding: 10px;
-  width: 80%;
-}
 
 /* || Footer */
 footer {
