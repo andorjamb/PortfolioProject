@@ -1,13 +1,6 @@
-/*On branch "grid-style"*/
 /*add js- class names to classes to signal which elements have js relationships*/
 
 /* || General Styles Site-wide*/
-
-/*Grid layout using BEM
-.main-container {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-}*/
 
 h1,
 h2 {
@@ -18,15 +11,24 @@ h2 {
   margin-bottom: 20px;
 }
 
-h3,
-h4 {
+h3 {
   font-family: Arial Narrow, sans-serif;
-  font-weight: 400, 300;
-  font-stretch: extra-expanded;
-  font-size: 18, 14;
+  font-weight: 700;
+  font-size: 18;
   line-height: normal;
   padding: 0;
-  margin-bottom: 20px;
+  margin: 0;
+}
+
+h4 {
+  font-family: Arial Narrow, sans-serif;
+  font-size: 16;
+}
+
+h5 {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: indianred;
 }
 
 ul,
@@ -67,28 +69,42 @@ li {
   border-bottom: 2px solid orange;
 }
 
-.main-banner {
-  display: flex;
+/*Header div classes*/
+
+/*header div classes*/
+.banner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
-  height: 100px;
   padding: 20px;
-  margin: 0;
+  margin: 0px;
   background-color: rgba(219, 79, 163, 0.75); /*hex #DB4FA1*/
 }
-.title {
-  text-align: center;
+
+.menu {
+  /*div for the navbar*/
+  height: 50px;
+  margin: 0px;
+  padding: 10px;
 }
+
 .title-div {
-  flex: 1;
+  /*Div for name of site*/
+
   height: 100px;
   margin: auto;
   text-align: center;
 }
 .page-div {
-  flex: 2;
+  /*Div for name of page*/
   height: 100px;
   text-align: center;
   margin: auto;
+}
+
+.title {
+  /*class for blog title-div heading1*/
+  text-align: center;
 }
 /* || Main */
 
@@ -101,15 +117,22 @@ li {
   background-color: rgba(219, 208, 173, 0.65);
   margin: 0;
   width: 20%;
-  padding: 20px;
-  min-height: 400px;
+  padding: 20px 15px;
   min-width: 60px;
 }
 
 .sidebar img {
   width: 100%;
   height: auto;
-  
+}
+@media screen and (max-width: 700px) {
+  .sidebar img {
+    display: none;
+  }
+  h1,
+  h2 {
+    font-size: 24px;
+  }
 }
 
 .sidebar ul {
@@ -140,7 +163,9 @@ li {
   /*the main div for the blog page*/
   font-family: Noto Sans KR, sans-serif;
   padding: 20px;
-  width: 60%;
+  width: 50%;
+  border-left: 5px solid magenta;
+  border-right: 5px solid magenta;
 }
 
 .blog-div h3 {
@@ -158,25 +183,21 @@ li {
   color: green;
   font-weight: 700;
   size: 30px;
-  
 }
 
 .post-div {
   /* third div in main, for links to blog posts, articles*/
   font-family: Noto Sans KR, sans-serif;
-  padding: 20px;
-  width: 20%;
-  border-left: 5px solid magenta;
+  padding: 20px 15px;
+  width: auto;
   min-width: 100px;
 }
 .post-div ul {
   margin-left: 0;
   padding: 0;
+  line-height: 1.5em;
 }
 
-.post div li {
-  line-height: 2em;
-}
 .post-div a {
   /*text style for post list hyperlinks*/
   font-family: Noto Sans KR, sans-serif;
@@ -185,7 +206,7 @@ li {
   margin: 0px;
   padding: 0px;
   list-style-type: none;
-  line-height: 2em;
+  word-wrap: wrap;
 }
 
 post-div a:visited {

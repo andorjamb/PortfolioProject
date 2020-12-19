@@ -18,6 +18,17 @@ h3 {
   margin: 0;
 }
 
+h4 {
+  font-family: Arial Narrow, sans-serif;
+  font-size: 16;
+}
+
+h5 {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: indianred;
+}
+
 ul,
 ol,
 li {
@@ -32,11 +43,46 @@ li {
 @media screen and (max-width: 600px) {
   h1,
   h2 {
-    font-size: 20px;
+    font-size: 24px;
   }
   .banner {
     display: flex;
     flex-direction: column;
+  }
+  .main-container {
+    display: flex;
+   
+  }
+  .sidebar {
+    background-color: rgba(219, 208, 173, 0.65);
+    margin: 0;
+    padding: 20px;
+  }
+
+  .right-div {
+    /*a placeholder div for the right side of main content*/
+    padding: 20px;
+    background-color: rgba(219, 208, 173, 0.65);
+  }
+
+  .intro-div {
+    /*the main div for the home page*/
+    font-family: Noto Sans KR, sans-serif;
+    padding: 20px;
+  }
+
+  .projects-div {
+    /*the main div for the projects page*/
+    font-family: Noto Sans KR, sans-serif;
+    padding: 10px;
+    padding-left: 20px;
+    
+  }
+  .add-resources-div {
+    /*the main div for the add-resources page*/
+    font-family: Noto Sans KR, sans-serif;
+    padding: 10px;
+    
   }
 }
 
@@ -46,35 +92,32 @@ header {
 
 /*header div classes*/
 .banner {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
+  padding: 20px;
 }
 
 .menu {
+  /*div for the navbar*/
   height: 50px;
-  margin: 0;
-  padding: 10px;
+  margin: 0px;
+  padding: 10px;  
 }
 
 .title-div {
   /*site name div*/
-  box-sizing: border-box;
-  height: 80px;
-  margin-left: 20px;
+  height: 100px;
   text-align: center;
-  line-height: 60px;
 }
 .page-div {
   /*div in header for page name*/
-  box-sizing: border-box;
   height: 100px;
-  margin-right: 50px;
-  line-height: 80px;
   text-align: center;
 }
 
 .title-div > h3 {
-  line-height: 20px;
+  line-height: 40px;
 }
 
 /*ul and associated links class in header navbar*/
@@ -105,22 +148,18 @@ header {
 /* || Main */
 /*div classes*/
 .main-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
   background-color: rgba(53, 204, 121, 0.65);
 }
 
 .sidebar {
   background-color: rgba(219, 208, 173, 0.65);
-  margin: 0;
-  flex: 20%;
   padding: 20px;
-  min-height: 400px;
-  min-width: 60px;
 }
 
 .right-div {
   /*a placeholder div for the right side of main content*/
-  flex: 20%;
   padding: 20px;
   background-color: rgba(219, 208, 173, 0.65);
 }
@@ -129,7 +168,6 @@ header {
   /*the main div for the home page*/
   font-family: Noto Sans KR, sans-serif;
   padding: 20px;
-  width: 80%;
 }
 
 .projects-div {
@@ -154,7 +192,7 @@ header {
 }
 
 .sidebar li {
-  line-height: 2em;
+  line-height: 1.5em;
   font-size: 16px;
 }
 
@@ -172,13 +210,10 @@ header {
   color: rgb(105, 6, 175);
 }
 
-
 /* || Footer */
 footer {
   height: 120px;
   background-color: rgb(197, 200, 219);
-  display: block;
-  float: bottom;
   padding: 20px;
   font-family: Noto Sans KR, sans-serif;
   font-size: smaller;
