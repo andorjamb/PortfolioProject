@@ -40,52 +40,6 @@ li {
 
 /* || Header */
 
-@media screen and (max-width: 600px) {
-  h1,
-  h2 {
-    font-size: 24px;
-  }
-  .banner {
-    display: flex;
-    flex-direction: column;
-  }
-  .main-container {
-    display: flex;
-   
-  }
-  .sidebar {
-    background-color: rgba(219, 208, 173, 0.65);
-    margin: 0;
-    padding: 20px;
-  }
-
-  .right-div {
-    /*a placeholder div for the right side of main content*/
-    padding: 20px;
-    background-color: rgba(219, 208, 173, 0.65);
-  }
-
-  .intro-div {
-    /*the main div for the home page*/
-    font-family: Noto Sans KR, sans-serif;
-    padding: 20px;
-  }
-
-  .projects-div {
-    /*the main div for the projects page*/
-    font-family: Noto Sans KR, sans-serif;
-    padding: 10px;
-    padding-left: 20px;
-    
-  }
-  .add-resources-div {
-    /*the main div for the add-resources page*/
-    font-family: Noto Sans KR, sans-serif;
-    padding: 10px;
-    
-  }
-}
-
 header {
   background-color: pink; /*hex conversion #FFC0CB*/
 }
@@ -102,7 +56,7 @@ header {
   /*div for the navbar*/
   height: 50px;
   margin: 0px;
-  padding: 10px;  
+  padding: 10px;
 }
 
 .title-div {
@@ -118,6 +72,13 @@ header {
 
 .title-div > h3 {
   line-height: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .banner {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*ul and associated links class in header navbar*/
@@ -149,7 +110,7 @@ header {
 /*div classes*/
 .main-container {
   display: grid;
-  grid-template-columns: 25% 50% 25%;
+  grid-template-columns: 20% 60% auto;
   background-color: rgba(53, 204, 121, 0.65);
 }
 
@@ -161,7 +122,7 @@ header {
 .right-div {
   /*a placeholder div for the right side of main content*/
   padding: 20px;
-  background-color: rgba(219, 208, 173, 0.65);
+  background: transparent;
 }
 
 .intro-div {
@@ -182,6 +143,43 @@ header {
   font-family: Noto Sans KR, sans-serif;
   padding: 10px;
   width: 80%;
+}
+
+@media screen and (max-width: 600px) {
+  .main-container {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+  }
+  .sidebar {
+    background-color: rgba(219, 208, 173, 0.65);
+    margin: 0;
+    padding: 20px;
+    min-height: 100px;
+  }
+
+  .right-div {
+    /*a placeholder div for the right side of main content*/
+    display: none;
+  }
+
+  .intro-div {
+    /*the main div for the home page*/
+    font-family: Noto Sans KR, sans-serif;
+    padding: 20px;
+  }
+
+  .projects-div {
+    /*the main div for the projects page*/
+    font-family: Noto Sans KR, sans-serif;
+    padding: 10px;
+    padding-left: 20px;
+  }
+  .add-resources-div {
+    /*the main div for the add-resources page*/
+    font-family: Noto Sans KR, sans-serif;
+    padding: 10px;
+  }
 }
 
 /*list and link styles*/

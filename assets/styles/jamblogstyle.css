@@ -71,7 +71,6 @@ li {
 
 /*Header div classes*/
 
-/*header div classes*/
 .banner {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -90,7 +89,6 @@ li {
 
 .title-div {
   /*Div for name of site*/
-
   height: 100px;
   margin: auto;
   text-align: center;
@@ -125,13 +123,10 @@ li {
   width: 100%;
   height: auto;
 }
+
 @media screen and (max-width: 700px) {
   .sidebar img {
     display: none;
-  }
-  h1,
-  h2 {
-    font-size: 24px;
   }
 }
 
@@ -157,6 +152,11 @@ li {
 
 .sidebar li a:visited {
   color: rgb(105, 6, 175);
+}
+
+.mobile-nav {
+  /*this is for small screens only, set display to none otherwise*/
+  display: none;
 }
 
 .blog-div {
@@ -229,6 +229,49 @@ post-div a:active {
   font-family: "Courier New", Courier, monospace;
   margin: 5px;
   padding: 5px 5px 5px 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .blog-div {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .mobile-nav {
+    /*Special nav bar for small screens*/
+    display: flex;
+    box-sizing: border-box;
+    height: 70px;
+    background: transparent;
+    border: 5px solid magenta;
+  }
+
+  .mobile-nav ul {
+    padding-left: 20px;
+    text-align: center;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .mobile-nav ul a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .post-div {
+    border-top: 5px solid magenta;
+  }
 }
 
 /* || Footer */

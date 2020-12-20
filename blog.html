@@ -52,9 +52,14 @@
     </header>
     <main class="main-container">
       <div class="sidebar">
-        <!--side bar content-->
+        <!--side bar content, doesn't display on small screens-->
         <h3>Side bar</h3>
         <img src="assets/images/sidebar-pic.jpg" alt="drinks" />
+      </div>
+      <div class = "mobile-nav">
+        <!--div for small screens only, shouldn't display on larger screens-->
+        <ul class =""><li><a href="#post-list">Go to Post Listing</a></li></ul>
+        
       </div>
       <div class="blog-div">
         <!--blog entry begins here-->
@@ -138,17 +143,18 @@
         <article>
           <h2 id="js-1">Some Preliminary notes on JavaScript</h2>
 
-          <p>About jquery:</p>
-          <a href="https://api.jquery.com/load/" target="_self">link</a>
+          <p>About jQuery:
+          <a href="https://api.jquery.com/load/" target="_self">link</a> to some jQuery methods.
+            <a
+              href="https://stackoverflow.com/questions/33021659/sidebar-navigation-and-display-content-on-right-side"
+              target="_self"
+              >This</a
+            >  is maybe useful? (About blog navigation)
+          </p>
+        
         </article>
 
-        <p>
-          <a
-            href="https://stackoverflow.com/questions/33021659/sidebar-navigation-and-display-content-on-right-side"
-            target="_self"
-            >This is maybe useful?</a
-          >(About blog navigation)
-        </p>
+   
         <article>
           <h2 id="git">Git Commands</h2>
 
@@ -255,7 +261,7 @@
 
             <h3>Using the Position property:</h3>
             <p>"Static" is the default, and jesu means for an element to sit wherever it would usually sit in the HTML.</p> 
-            <p>"Relative" position of an element means <i>relative to its static position</i,> and defining the position this 
+            <p>"Relative" position of an element means relative to its static position</i,> and defining the position this 
               way allows you to move the element, eg, 10px left or right from where it would otherwise sit. </p>
             <p>"Absolute" positioning is designated in pixels relative to either the nearest absolute-postioned parent element, of the HTML 
               page itself (the root block, or "initial containing element"), if no such element is found. 
@@ -275,9 +281,10 @@ non-statically-positioned element.
 <p><span class="emphatic">Relative positioning</span> is actually basically the same as absolute positioning, except 
 that it takes as its reference where it <i>would</i> have been positioned if in normal flow.</p>
  </article>      </div>
+ 
       <div class="post-div">
         <!--This is the list of blog entries with jump links to headings-->
-        <h3>List of Posts</h3>
+        <h3 id = "post-list">List of Posts</h3>
         <h2>2020</h2>
         <ul id="post-list">
           <li>
