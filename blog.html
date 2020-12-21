@@ -260,15 +260,7 @@
             Grid layout is the most recent development (and not yet fully supported). </p>
 
             <h3>Using the Position property:</h3>
-            <p>"Static" is the default, and jesu means for an element to sit wherever it would usually sit in the HTML.</p> 
-            <p>"Relative" position of an element means relative to its static position</i,> and defining the position this 
-              way allows you to move the element, eg, 10px left or right from where it would otherwise sit. </p>
-            <p>"Absolute" positioning is designated in pixels relative to either the nearest absolute-postioned parent element, of the HTML 
-              page itself (the root block, or "initial containing element"), if no such element is found. 
-            </p>
-            <p>See here for more detail: <a href="https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/">
-            CSS-Tricks on positioning</a></p>
-
+            <p><span class = "emphatic">"Static"</span>is the default value, and means for an element to sit wherever it would usually sit in the HTML.</p>
          <p><span class="emphatic">"Absolute" positioning</span>  instead fixes an element outside the normal HTML flow. It is usually combined 
            with properties that specify its exact position on the page, namely:<br>
            Top <br>
@@ -278,8 +270,16 @@
 (You only specify one property for vertical and one for horizontal, if needed at all).
 The abolute-positioned element will be placed relative to the &ltbody&gt element, or to the "closest"
 non-statically-positioned element. 
+<p>It is designated in pixels relative to either the nearest absolute-postioned parent element, of the HTML 
+  page itself (the root block, or "initial containing element"), if no such element is found. 
+</p>
 <p><span class="emphatic">Relative positioning</span> is actually basically the same as absolute positioning, except 
 that it takes as its reference where it <i>would</i> have been positioned if in normal flow.</p>
+<p>Relative position of an element means relative to its static position, and defining the position this way allows 
+  you to move the element, eg, 10px left or right from where it would otherwise sit. </p>
+            
+<p>See here for more detail: <a href="https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/">
+            CSS-Tricks on positioning</a></p>
  </article>      </div>
  
       <div class="post-div">
