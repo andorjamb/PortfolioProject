@@ -285,7 +285,33 @@ that it takes as its reference where it <i>would</i> have been positioned if in 
             
 <p>See here for more detail: <a href="https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/">
             CSS-Tricks on positioning</a></p>
- </article>      </div>
+ </article>     
+<article><h2>Using BEM – Block Element Modifiers
+</h2>
+<p>...and naming conventions in CSS.</p>
+<p>For CSS names, use hyphenated all-lowercase forms.
+  Use a name that makes it obvious what a component is
+  about. Then for all the elements that are part of this
+  component, use the convention of two underscores and the 
+  element name.</p>
+  <h4>  Naming convention for elements:</h4>
+  <p><b>.the-component__part {}</b><br>
+  the elements are child components of the parent.</p>
+  
+  <h4>Naming convention for modifiers:</h4>
+  <p>
+  <b>.the-component--red {}</b><br>
+  
+  two hyphens (here the component is modified)</p>
+  
+ <p><b>.the-component__part--red</b><br>
+  
+  here the element 'part' is being modified.
+  
+  
+  </p>
+
+</article> </div>
  
       <div class="post-div">
         <!--This is the list of blog entries with jump links to headings-->

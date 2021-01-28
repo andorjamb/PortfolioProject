@@ -117,8 +117,13 @@ header {
 .sidebar {
   background-color: rgba(219, 208, 173, 0.65);
   padding: 20px;
-  overflow: auto;
-  
+}
+
+.sidebar-scroll {
+  height: 500px;
+  background-color: rgba(219, 208, 173, 0.65);
+  padding: 20px;
+  overflow-y: scroll;
 }
 
 .right-div {
@@ -196,17 +201,17 @@ header {
   font-size: 16px;
 }
 
-.sidebar li a {
+.sidebar a {
   text-decoration: none;
   color: rgb(27, 98, 230);
 }
 
-.sidebar li a:hover {
+.sidebar a:hover {
   color: rgb(240, 238, 114);
   text-shadow: 1px 1px rgb(206, 126, 199);
 }
 
-.sidebar li a:visited {
+.sidebar a:visited {
   color: rgb(105, 6, 175);
 }
 
