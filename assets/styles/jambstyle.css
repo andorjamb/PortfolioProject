@@ -126,6 +126,17 @@ header {
   overflow-y: scroll;
 }
 
+.sidebar-scroll::-webkit-scrollbar {
+  width: 1em;
+}
+.sidebar-scroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(146, 26, 26, 0.3);
+}
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background-color: red;
+  outline: 1px solid slategrey;
+}
+
 .right-div {
   /*a placeholder div for the right side of main content*/
   padding: 20px;

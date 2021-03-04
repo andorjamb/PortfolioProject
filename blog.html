@@ -54,7 +54,7 @@
       <div class="sidebar">
         <!--side bar content, doesn't display on small screens-->
         <h3>Side bar</h3>
-        <img src="assets/images/sidebar-pic.jpg" alt="drinks" />
+        <img src="assets/images/sidebar-pic.webp" alt="drinks" />
       </div>
       <div class = "mobile-nav">
         <!--div for small screens only, shouldn't display on larger screens-->
@@ -286,7 +286,7 @@ that it takes as its reference where it <i>would</i> have been positioned if in 
 <p>See here for more detail: <a href="https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/">
             CSS-Tricks on positioning</a></p>
  </article>     
-<article><h2>Using BEM – Block Element Modifiers
+<article><h2 id ="BEM">Using BEM – Block Element Modifiers
 </h2>
 <p>...and naming conventions in CSS.</p>
 <p>For CSS names, use hyphenated all-lowercase forms.
@@ -311,7 +311,23 @@ that it takes as its reference where it <i>would</i> have been positioned if in 
   
   </p>
 
-</article> </div>
+</article> 
+
+<article><h2 id="JSX">About JSX</h2>
+  <p>JSX is a weird html-JavaScript-looking hybrid that is used as a go-between for JavaScript and React. 
+    It makes using React easier as it firstly makes the structure more readable by being written in familiar-looking html, 
+    and and secondly, allows you to define things called 'Components' that are easy to reuse, instead of typing out a lot of 
+    React JavaScript code repeatedly.
+  </p>
+  <p>The JSX is included in the .js file amongst your other JavaScript. A Transpiler called Babel will transpile the JSX into 
+    JavaScript for the browser - the include the src link to Babel in the head of the .html file.
+  </p>
+  <p>&lt;script src="https://unpkg.com/@babel/standalone/babel.min.js"&gt;&lt;/script&gt;</p>
+
+
+
+</article>
+</div>
  
       <div class="post-div">
         <!--This is the list of blog entries with jump links to headings-->
@@ -331,6 +347,8 @@ that it takes as its reference where it <i>would</i> have been positioned if in 
           <li><a href="#git">Git commands</a></li>
           <li><a href="#responsive-design">Responsive Design</a></li>
           <li><a href="#page-layout">Page layout</a></li>
+          <li><a href="#BEM">BEM</a></li>
+          <li><a href="#JSX">JSX</a></li>
           <!--<li>test list item</li>-->
         </ul>
       </div>
