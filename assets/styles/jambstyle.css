@@ -110,12 +110,11 @@ header {
 /*div classes*/
 .main-container {
   display: grid;
-  grid-template-columns: 20% 60% auto;
+  grid-template-columns: 15% 60% auto;
   background-color: rgba(53, 204, 121, 0.65);
 }
 
 .sidebar {
-  background-color: rgba(219, 208, 173, 0.65);
   padding: 20px;
 }
 
