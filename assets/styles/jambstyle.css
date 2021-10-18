@@ -4,10 +4,10 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Rambla:ital,wght@1,700&family=Skranji&display=swap");
 
-
 body {
   margin-top: 0px;
   margin-right: 0px;
+  font-size: 14px;
 }
 h1,
 h2 {
@@ -60,7 +60,6 @@ header {
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
   padding: 20px;
-  padding-top:90px;
 }
 
 .menu {
@@ -68,10 +67,7 @@ header {
   height: 50px;
   margin: 0px;
   padding: 10px;
-  width: 100%;
   background-color: none;
-  position: fixed;
-
 }
 
 .title-div,
@@ -124,8 +120,7 @@ header {
   grid-template-columns: 20% 60% auto;
   background-color: rgba(53, 204, 121, 0.65);
   border-top: 3px solid magenta;
-  border-bottom:3px solid magenta;
-  
+  border-bottom: 3px solid magenta;
 }
 
 .sidebar {
@@ -143,7 +138,7 @@ header {
   width: 1em;
 }
 .sidebar-scroll::-webkit-scrollbar-track {
-  background:red;
+  background: red;
 }
 .sidebar-scroll::-webkit-scrollbar-thumb {
   background-color: red;
@@ -216,7 +211,6 @@ header {
   color: white;
   text-shadow: 1px 1px rgb(245, 98, 176);
   text-decoration: none;
-
 }
 
 .content-div a:visited {
