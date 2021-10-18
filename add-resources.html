@@ -26,6 +26,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
 <link rel="manifest" href="assets/images/site.webmanifest">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
   <body>
@@ -138,5 +139,18 @@
         </p>
       </div>
     </footer>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      window.onscroll = function(){doThis()};
+    
+      
+    function doThis(){  
+        if (document.body.scrollTop > 5)
+      {$(".menu").hide();}
+    }})
+  
+      
+
+    </script>
   </body>
 </html>
