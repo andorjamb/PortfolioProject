@@ -1,5 +1,9 @@
 /* || General Styles Site-wide except for blog page (and project page)*/
 
+/*Import fonts from Google Fonts*/
+
+@import url("https://fonts.googleapis.com/css2?family=Rambla:ital,wght@1,700&family=Skranji&display=swap");
+
 h1,
 h2 {
   font-family: "Raleway", sans-serif;
@@ -10,7 +14,7 @@ h2 {
 }
 
 h3 {
-  font-family: Arial Narrow, sans-serif;
+  font-family: "Skranji", cursive;
   font-weight: 700;
   font-size: 18;
   line-height: normal;
@@ -19,7 +23,7 @@ h3 {
 }
 
 h4 {
-  font-family: Arial Narrow, sans-serif;
+  font-family: "Arial Narrow", sans-serif;
   font-size: 16;
 }
 
@@ -32,7 +36,7 @@ h5 {
 ul,
 ol,
 li {
-  font-family: Arial Narrow, sans-serif;
+  font-family: "Arial Narrow", sans-serif;
   font-size: large;
   text-decoration: none;
   list-style: none;
@@ -47,6 +51,7 @@ header {
 /*header div classes*/
 .banner {
   display: grid;
+  background-image: linear-gradient(pink, rgb(245, 98, 176));
   grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
   padding: 20px;
@@ -59,13 +64,9 @@ header {
   padding: 10px;
 }
 
-.title-div {
-  /*site name div*/
-  height: 100px;
-  text-align: center;
-}
+.title-div,
 .page-div {
-  /*div in header for page name*/
+  /*site name div and page name div, in header*/
   height: 100px;
   text-align: center;
 }
@@ -99,7 +100,7 @@ header {
 }
 
 .navbar a:active {
-  border-bottom: 2px solid orange;
+  border-bottom: 2px solid magenta;
 }
 
 .title {
@@ -142,24 +143,11 @@ header {
   background: transparent;
 }
 
-.intro-div {
-  /*the main div for the home page*/
-  font-family: Noto Sans KR, sans-serif;
-  padding: 20px;
-}
-
-.projects-div {
-  /*the main div for the projects page*/
+.content-div {
+  /*the main div for content*/
   font-family: Noto Sans KR, sans-serif;
   padding: 10px;
   padding-left: 20px;
-  width: 80%;
-}
-.add-resources-div {
-  /*the main div for the add-resources page*/
-  font-family: Noto Sans KR, sans-serif;
-  padding: 10px;
-  width: 80%;
 }
 
 @media screen and (max-width: 600px) {
@@ -179,26 +167,7 @@ header {
     /*a placeholder div for the right side of main content*/
     display: none;
   }
-
-  .intro-div {
-    /*the main div for the home page*/
-    font-family: Noto Sans KR, sans-serif;
-    padding: 20px;
-  }
-
-  .projects-div {
-    /*the main div for the projects page*/
-    font-family: Noto Sans KR, sans-serif;
-    padding: 10px;
-    padding-left: 20px;
-  }
-  .add-resources-div {
-    /*the main div for the add-resources page*/
-    font-family: Noto Sans KR, sans-serif;
-    padding: 10px;
-  }
 }
-
 /*list and link styles*/
 
 .sidebar ul {
@@ -209,26 +178,44 @@ header {
 .sidebar li {
   line-height: 1.5em;
   font-size: 16px;
+  padding: 2px 2px;
+  margin: 1px 3px;
 }
 
 .sidebar a {
   text-decoration: none;
-  color: rgb(27, 98, 230);
+  color: rgb(245, 98, 176);
+  font-weight: bold;
 }
 
 .sidebar a:hover {
-  color: rgb(240, 238, 114);
-  text-shadow: 1px 1px rgb(206, 126, 199);
+  color: rgb(206, 126, 199);
+  background-color: white;
+  opacity: 0.5;
 }
 
 .sidebar a:visited {
   color: rgb(105, 6, 175);
 }
 
+.content-div a {
+  color: white;
+  text-shadow: 1px 1px rgb(245, 98, 176);
+  text-decoration: none;
+
+}
+
+.content-div a:visited {
+  color: magenta;
+  text-shadow: 2px 2px purple;
+}
+
 /* || Footer */
 footer {
-  height: 120px;
-  background-color: rgb(197, 200, 219);
+  height: 100px;
+  background-image: linear-gradient(rgb(245, 98, 176), magenta);
+  opacity: 0.75;
+  color: white;
   padding: 20px;
   font-family: Noto Sans KR, sans-serif;
   font-size: smaller;

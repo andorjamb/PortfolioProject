@@ -2,6 +2,10 @@
 
 /* || General Styles Site-wide*/
 
+/*import fonts from Google Fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Rambla:ital,wght@1,700&family=Skranji&display=swap');
+
 h1,
 h2 {
   font-family: "Raleway", sans-serif;
@@ -12,7 +16,7 @@ h2 {
 }
 
 h3 {
-  font-family: Arial Narrow, sans-serif;
+  font-family: 'Rambla', sans-serif;
   font-weight: 700;
   font-size: 18;
   line-height: normal;
@@ -21,7 +25,7 @@ h3 {
 }
 
 h4 {
-  font-family: Arial Narrow, sans-serif;
+  font-family: 'Scranji', cursive;
   font-size: 16;
 }
 
@@ -66,7 +70,7 @@ li {
 }
 
 .navbar a:active {
-  border-bottom: 2px solid orange;
+  border-bottom: 2px solid magenta;
 }
 
 /*Header div classes*/
@@ -185,6 +189,17 @@ li {
   size: 30px;
 }
 
+.blog-div a {
+  color: white;
+  text-shadow: 1px 1px rgb(245, 98, 176);
+  text-decoration: none;
+
+}
+
+.blog-div a:visited {
+  color: magenta;
+  text-shadow: 2px 2px purple;
+}
 .post-div {
   /* third div in main, for links to blog posts, articles*/
   font-family: Noto Sans KR, sans-serif;
@@ -202,6 +217,8 @@ li {
   /*text style for post list hyperlinks*/
   font-family: Noto Sans KR, sans-serif;
   font-size: 14px;
+  color: rgb(245, 98, 176);
+  font-weight: bold;
   text-decoration: none;
   margin: 0px;
   padding: 0px;
@@ -210,7 +227,7 @@ li {
 }
 
 post-div a:visited {
-  color: purple;
+  color: magenta;
 }
 
 post-div a:hover {
@@ -277,7 +294,9 @@ post-div a:active {
 /* || Footer */
 footer {
   height: 150px;
-  background-color: rgb(197, 200, 219);
+  background-image: linear-gradient(pink, rgb(245, 98, 176));
+  
+  color: white;
   display: block;
   float: bottom;
   padding: 20px;
