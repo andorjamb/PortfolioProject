@@ -220,7 +220,7 @@ header {
 
 /* || Footer */
 footer {
-  height: 100px;
+  height: auto;
   background-image: linear-gradient(rgb(245, 98, 176), magenta);
   opacity: 0.75;
   color: white;
