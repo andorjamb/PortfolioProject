@@ -5,6 +5,7 @@
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CYZ11GFGTS"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -63,6 +64,15 @@
       </div>
       <div class="blog-div">
         <!--blog entry begins here-->
+        <article>
+          <h2 id="graphic-manipulation-js">Graphics manipulation with JavaScript</h2>
+          <h4>A simple test image:</h4>
+          <img src="./assets/images/book-design-2.png" alt="simple png" width="150px" height="auto" margin="5px;" onmouseover="this.src='./assets/images/book-design-1.png'" onmouseout="this.src='./assets/images/book-design-2.png'">
+        <p>Method 1: Changing the source attribute of the image. (Can cause lag)</p>
+        <p>Method 2: Using JS to change the class</p>
+        <button id="rollover-button-1"></button>
+        <button id="rollover-button-2"></button>
+        </article>
 
         <article>
           <h2 id="blog-from-scratch">Chapter 1: Making a blog from scratch</h2>
@@ -92,7 +102,8 @@
         <article>
           <h2 id="jquery-events">JQuery Events</h2>
           <p>
-            <button class="test-button">Click me</button>
+            <button id="hide-button-1">Click me</button>
+            <script type="text/javacript"></script>
           </p>
         </article>
 
@@ -346,6 +357,9 @@ that it takes as its reference where it <i>would</i> have been positioned if in 
         <h2>2020</h2>
         <ul id="post-list">
           <li>
+            <a href="#graphic-manipulation-js">Graphic manipulation with JS</a>
+          </li>
+          <li>
             <a href="#blog-from-scratch">The blog from scratch</a>
           </li>
           <li>
@@ -378,5 +392,6 @@ that it takes as its reference where it <i>would</i> have been positioned if in 
         </p>
       </div>
     </footer>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
