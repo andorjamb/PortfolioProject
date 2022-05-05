@@ -2,7 +2,7 @@ window.onload = initAll;
 
 function initAll() {
   console.log("script is loaded and operational!");
-
+//for all images on the page that are also links:
   for (var i = 0; i < document.images.length; i++) {
     if (document.images[i].parentNode.tagName == "A") {
       //this is a link tag - the tag name should be in capitals
