@@ -241,6 +241,16 @@ post-div a:active {
   color: orange;
 }
 
+.test-button {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  border: solid 2px black;
+  background-color: pink;
+  color: brown;
+  font: Helvetica;
+}
+
 .codetype {
   /*this is a div class for illustrating example code in the blog posts*/
   border: grey solid 1px;
