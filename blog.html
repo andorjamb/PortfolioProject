@@ -65,15 +65,28 @@
       <div class="blog-div">
         <!--blog entry begins here-->
         <article>
-          <h2 id="graphic-manipulation-js">Element manipulation</h2>
+          <h2 id="graphic-manipulation-js">Element manipulation with javascript</h2>
           <h4>1. Rollovers</h4>
           <p>Method 1: Changing the source attribute of the image just using HTML. (Can cause lag)</p>
           <img src="./assets/images/book-design-2.png" alt="simple png" width="150px" height="auto" onmouseover="this.src='./assets/images/book-design-1.png'" onmouseout="this.src='./assets/images/book-design-2.png'">
         <p>Method 2: Using JS to change the class</p>
         <a><img id="rollover-image-1" src="./assets/images/rollover-image-1.png"></a>
         <!--<a><img id="rollover-image-1-click" src="./assets/images/rollover-image-1-click.png" ></a>-->
-        <p>The code determining the image's behaviour on rolloover is the JS file.</p>
-        </article>pa
+        <p>The code controlling the image's behaviour on rollover is the JS file.</p>
+        </article>
+
+        <article>
+          <h2 id="jquery-events">Element Maniuplation with JQuery Events</h2>
+          <div height="250px" style="display:block"><img id="hide-element-1" src="/assets/images/hideElement-1.png"></div>
+          <p>
+        <button class="test-button" id="hide-button-1">Disappear the cat</button><button class="test-button" id="show-button-1">Bring back the cat</button>
+            <script>
+               // document.getElementById("hide-button-1").onclick=function (){console.log("just testing");}
+              $("#hide-button-1").click($("#hide-element-1").hide())
+              $("#show-button-1").click($("#hide-element-1").show())
+            </script>
+          </p>
+        </article>
 
         <article>
           <h2 id="blog-from-scratch">Chapter 1: Making a blog from scratch</h2>
@@ -100,20 +113,7 @@
             </svg>
           </p>
         </article>
-        <article>
-          <h2 id="jquery-events">JQuery Events</h2>
-          <div height="200px"><img id="hide-element-1" src="/assets/images/hideElement-1.png" style="display:block"></div>
-          <p>
-            
-            <button class="test-button" id="hide-button-1">Disappear the cat</button><button class="test-button" id="show-button-1">Bring back the cat</button>
-            <script>
-               // document.getElementById("hide-button-1").onclick=function (){console.log("just testing");}
-              $("#hide-button-1").click(function (){console.log("test");$("#hide-element-1").hide()
-              //document.getElementById("hide-element-1").style.display="hide"
-              ;});
-            </script>
-          </p>
-        </article>
+        
 
         <article>
           <h2 id="css-specificity">CSS Specificity</h2>
