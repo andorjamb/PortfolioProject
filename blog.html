@@ -72,18 +72,27 @@
         <p>Method 2: Using JS to change the class</p>
         <a><img id="rollover-image-1" src="./assets/images/rollover-image-1.png"></a>
         <!--<a><img id="rollover-image-1-click" src="./assets/images/rollover-image-1-click.png" ></a>-->
-        <p>The code controlling the image's behaviour on rollover is the JS file.</p>
+        <p>The code controlling the image's behaviour on rollover is in the index.js file.</p>
+        <p>Method 3: using a JS function to target all images of a class</p>
+        <p>These images are within link tags. The javascript file looks for all images whose parents tags are links tags,
+          and applies a rollover function that swaps their source image. </p>
+        <a><img src="./assets/images/book-design-2.png" width="50px" height="auto" display="block"></a>
+        <a><img src="./assets/images/rollover-image-1.png" width="50px" height="auto" display="block"></a>
+        <a><img src=""></a>
         </article>
 
         <article>
           <h2 id="jquery-events">Element Maniuplation with JQuery Events</h2>
-          <div height="250px" style="display:block"><img id="hide-element-1" src="/assets/images/hideElement-1.png"></div>
+          <div height="250px" style="display:block"><img id="hide-element-1" src="./assets/images/hideElement-1.png"></div>
           <p>
         <button class="test-button" id="hide-button-1">Disappear the cat</button><button class="test-button" id="show-button-1">Bring back the cat</button>
             <script>
                // document.getElementById("hide-button-1").onclick=function (){console.log("just testing");}
-              $("#hide-button-1").click($("#hide-element-1").hide())
-              $("#show-button-1").click($("#hide-element-1").show())
+               $(document).ready(function(){
+                $("#hide-button-1").click(function(){$("#hide-element-1").hide()})
+              $("#show-button-1").click(function(){$("#hide-element-1").show()})
+               })
+           
             </script>
           </p>
         </article>

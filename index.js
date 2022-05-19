@@ -9,7 +9,7 @@ function initAll() {
       setupRollover(document.images[i]);
     }
   }
-//this function's code is from the Negrino/Smith textbook
+  //this function's code is from the Negrino/Smith textbook
   function setupRollover(thisImage) {
     thisImage.outImage = new Image();
     thisImage.outImage.src = thisImage.src;
@@ -19,9 +19,11 @@ function initAll() {
     thisImage.overImage = new Image();
     //note to self: you need to upload a suitable image for this function
     thisImage.overImage.src = "./assets/images/" + thisImage.id + "_on.png";
+    //the file's name needs to be exactly the same as the id
     thisImage.onmouseover = function () {
       this.src = this.overImage.src;
     };
+    //this function simply swaps the source of the displayed image on mouse over
   }
   //function hideElement(thisImage) {
 
