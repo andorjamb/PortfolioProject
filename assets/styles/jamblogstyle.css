@@ -5,7 +5,7 @@
 /*import fonts from Google Fonts*/
 
 @import url("https://fonts.googleapis.com/css2?family=Rambla:ital,wght@1,700&family=Skranji&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Vibur&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Vibur&display=swap");
 
 body {
   margin-top: 0px;
@@ -269,10 +269,11 @@ post-div a:active {
   color: white;
   padding: 15px;
   font-size: 48px;
-  font-family: 'Vibur', cursive;
-  text-shadow: 0 0 7px white, 0 0 10px white, 0 0 20px #ff99ff, 0 0 24px #ff99ff,
+  font-family: "Vibur", cursive;
+  animation: flicker 1.5s infinite alternate; 
+  /*text-shadow: 0 0 7px white, 0 0 10px white, 0 0 20px #ff99ff, 0 0 24px #ff99ff,
     0 0 52px #ff99ff, 0 0 64px #ff99ff, 0 0 84px #ff99ff, 0 0 104px #ff99ff,
-    0 0 150px #ff99ff;
+    0 0 150px #ff99ff;*/
 }
 
 @media screen and (max-width: 600px) {
@@ -315,6 +316,23 @@ post-div a:active {
 
   .post-div {
     border-top: 5px solid magenta;
+  }
+}
+
+@keyframes flicker {
+  0%,
+  20%,
+  65%,
+  80%,
+  100% {
+    text-shadow: 0 0 7px white, 0 0 10px white, 0 0 20px #ff99ff,
+      0 0 24px #ff99ff, 0 0 52px #ff99ff, 0 0 64px #ff99ff, 0 0 84px #ff99ff,
+      0 0 104px #ff99ff, 0 0 150px #ff99ff;
+  }
+  22%,
+  67%,
+  82% {
+    text-shadow: none;
   }
 }
 

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- if you are reading this you are working on the 'simple structure' version using jumplinks to posts-->
-<!--I have put jump links to post headings in the "post-div" and all posts for current year on same page, index.html-->
+<!--I have put jump links to post headings in the "post-div" and all posts on same page, index.html-->
 <html>
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -28,6 +28,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
       rel="stylesheet"
     />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
   </head>
   <body>
     <header>
@@ -62,8 +63,25 @@
         <ul class =""><li><a href="#post-list">Go to Post Listing</a></li></ul>
         
       </div>
+      <!--////////////////////////////////////////////////////////////7-->
       <div class="blog-div">
-        <!--blog entry begins here-->
+        <!--blog entries begin here-->
+       <article>
+         <h2 id="">Cloning page elements with JavaScript</h2>
+         <p>
+           Use the cloneNode() method, and set its argument to 'true' if you also want to clone all of the element's child nodes.
+         </p>
+       </article>
+       
+       
+       
+        <article>
+          <h2 id="python">Using Python in your HTML document</h2>
+          <py-script>print("hi there")</py-script>
+          <p>see <a href="https://www.freecodecamp.org/news/pyscript-python-front-end-framework/">here</a></p>
+          <py-repl id="pyrepl" autogenerate="true"></py-repl>
+        </article>
+
         <article>
           <h2 id="graphic-manipulation-js">Element manipulation with javascript</h2>
           <h4>1. Rollovers</h4>
@@ -82,7 +100,7 @@
         </article>
 
         <article>
-          <h2 id="jquery-events">Element Maniuplation with JQuery Events</h2>
+          <h2 id="jquery-events">Element Manipulation with JQuery Events</h2>
           <div height="250px" style="display:block"><img id="hide-element-1" src="./assets/images/hideElement-1.png"></div>
           <p>
         <button class="test-button" id="hide-button-1">Disappear the cat</button><button class="test-button" id="show-button-1">Reappear the cat</button>
@@ -95,7 +113,7 @@
            
             </script>
             <p>JQuery selectors are used to determine the behaviour of the buttons when clicked. </p>
-            <div width=100px><pre class="codetype">$(document).ready(function(){
+            <div width="auto;"><pre class="codetype" width = "50%">$(document).ready(function(){
               $("#hide-button-1").click(function(){
                 $("#hide-element-1").hide()})
             $("#show-button-1").click(function(){
@@ -121,7 +139,7 @@
           <p>(See <a href="https://css-tricks.com/how-to-create-neon-text-with-css/">here</a>) - Creates appearance of 
             glowing neon text just using multiple layers, with increasing blur-radius,  of the text-shadow property.</p>
           <div style="background-color: black; padding: 0px 10px; border-radius: 20px; height: auto; width: 300px; float: center;">
-          <p class="neonText">Flashy</p></div>
+          <p class="neonText">Flashy what</p></div>
           <h3>SVG Graphics and simple animations using CSS and Keyframes</h3>
           <p>
             <svg height="400px" width="400px">
@@ -376,12 +394,14 @@ that it takes as its reference where it <i>would</i> have been positioned if in 
 
 </article>
 </div>
- 
+ <!--/////////////////////////////////////////////////////////////////////////////-->
       <div class="post-div">
         <!--This is the list of blog entries with jump links to headings-->
         <h3 id = "post-list">List of Posts</h3>
-        <h2>2020</h2>
         <ul id="post-list">
+          <li>
+            <a href="#python">Embedding python with PyScript</a>
+          </li>
           <li>
             <a href="#graphic-manipulation-js">Graphic manipulation with JS</a>
           </li>
