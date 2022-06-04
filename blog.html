@@ -114,11 +114,11 @@
             </script>
             <p>JQuery selectors are used to determine the behaviour of the buttons when clicked. </p>
             <div width="auto;"><pre class="codetype" width = "50%">$(document).ready(function(){
-              $("#hide-button-1").click(function(){
-                $("#hide-element-1").hide()})
-            $("#show-button-1").click(function(){
-              $("#hide-element-1").show()})
-             })</pre></div>
+  $("#hide-button-1").click(function(){
+  $("#hide-element-1").hide()})
+  $("#show-button-1").click(function(){
+  $("#hide-element-1").show()})
+    })</pre></div>
           </p>
         </article>
 
@@ -140,12 +140,14 @@
             glowing neon text just using multiple layers, with increasing blur-radius,  of the text-shadow property.</p>
           <div style="background-color: black; padding: 0px 10px; border-radius: 20px; height: auto; width: 300px; float: center;">
           <p class="neonText">Flashy what</p></div>
+          <p>The text is animated using keyframes.</p>
+
           <h3>SVG Graphics and simple animations using CSS and Keyframes</h3>
           <p>
             <svg height="400px" width="400px">
-              <polyline points="100, 0 100, 200 10, 5 10, 100" style="fill:none; stroke:red;stroke-width:3"></polyline>
-            <polyline points="100, 200 200, 45 150, 200" ></polyline>
-              <polyline points="250,100 200, 255" style="fill:green; stroke:yellow"></polyline>
+              <polyline id="red" points="100, 0 100, 200 10, 5 10, 100" style="fill:none; stroke:red;stroke-width:3"></polyline>
+            <polyline id="black" points="100, 200 200, 45 150, 200" ></polyline>
+              <polyline id="green" points="250,100 200, 255" style="fill:green; stroke:yellow"></polyline>
             </svg>
           </p>
         </article>
@@ -432,9 +434,13 @@ that it takes as its reference where it <i>would</i> have been positioned if in 
         <p>Andor Jamb aka Anna Petelin 2020-2022</p>
         <p>Contact: andorjamb@protonmail.com</p>
         <p><a href="#top">Return to Top</a></p>
-          <a href="https://github.com/andorjamb" target="_self" >
-            <img src="assets/images/GitHub-Mark-32px.png" alt="octocat"> 
-          </a>
+        <a href="https://github.com/andorjamb" target="_blank">
+          <img
+            id="GitHub-Mark-Light-32px"
+            src="./assets/images/GitHub-Mark-Light-32px.png"
+            alt="github"
+          />
+        </a>
         </p>
       </div>
     </footer>
