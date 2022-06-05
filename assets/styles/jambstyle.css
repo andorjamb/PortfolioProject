@@ -124,10 +124,20 @@ header {
   border-bottom: 3px solid magenta;
 }
 
+/*sidebar classes - scrollbar used in Resources page*/
+
 .sidebar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   padding: 20px;
 }
 
+/* to preserve scroll functionality, without scrollbar: for Safari and chrome:*/
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+/*this class for experimentation, currently not used*/
 .sidebar-scroll {
   height: 500px;
   background-color: rgba(219, 208, 173, 0.65);
@@ -145,7 +155,7 @@ header {
   background-color: red;
   outline: 1px solid slategrey;
 }
-
+/*  ///////////////////////////////////////////*/
 .right-div {
   /*a placeholder div for the right side of main content*/
   padding: 20px;
