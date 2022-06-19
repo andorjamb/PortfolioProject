@@ -218,6 +218,9 @@ header {
   color: rgb(105, 6, 175);
 }
 
+.todo li {
+  list-style-type: circle;
+}
 .content-div a {
   color: white;
   text-shadow: 1px 1px rgb(245, 98, 176);
